@@ -1,29 +1,70 @@
 body {
+    margin: 0;
     background-color: lightgoldenrodyellow;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
 }
 
-h1 {
-    font-size: 30px;
-    color: teal;
+header {
+    background-color: lightgrey;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+h1,
+h2 {
+    font-family: 'Chelsea Market', cursive;
+}
+
+header h1 {
+    color: rgb(182, 106, 35);
+    font-size: 50px;
+}
+
+header img {
+    border-radius: 170px;
+    width: 300px;
+    border: 10px solid rgb(182, 106, 35);
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+main img {
+    width: 100%;
 }
 
 h2 {
-    color: red;
-    font-size: 20px;
+    font-size: 30px;
+    color: brown;
+    margin: 40px 0 10px;
 }
 
-.big {
-    font-size: 60px;
+a {
+    color: brown;
 }
 
-.uppercase {
-    text-transform: uppercase;
+a:hover {
+    background-color: brown;
+    color: white;
 }
 
-.big.uppercase {
-    color: navy;
+footer {
+    background-color: lightgrey;
+    text-align: center;
+    color: brown;
+    padding: 10px;
+    margin: 0;
 }
 
-h1 span {
-    color: violet;
+p.caption {
+    color: #999999;
+    font-size: 25px;
+    font-style: italic;
+    margin-top: 0;
 }
