@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <title>Ripple</title>
+</head>
+
+<body>
+    <a href="#">Gomb</a>
+    <a href="#">Gomb</a>
+    <script type="text/javascript">
+        const buttons = document.querySelectorAll('a');
+        buttons.forEach(btn => {
+            btn.addEventListener('click', function(e) {
+
+                    Let x = e.clientX - e.target.offsetLeft;
+                    Let y = e.clientY - e.target.offsetTop;
+
+                    Let ripples = document.createElement('span');
+                    ripple.style.left = x + 'px';
+                    ripple.style.top = y + 'px';
+                    this.appendChild(ripples);
+
+                    setTimeout(() => ) {
+                        ripples.remove()
+
+                    }, 1000);
+            })
+        })
+    </script>
+</body>
+
+</html>
