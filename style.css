@@ -10,7 +10,7 @@ body {
     align-items: center;
     min-height: 100vh;
     flex-direction: column;
-    background: lightgoldenrodyellow;
+    background: linear-gradient(45deg, silver, rgb(68, 68, 68));
 }
 
 a {
@@ -26,6 +26,7 @@ a {
     letter-spacing: 2px;
     border-radius: 40px;
     overflow: hidden;
+    border: 3px solid black;
 }
 
 a:nth-child(1) {
