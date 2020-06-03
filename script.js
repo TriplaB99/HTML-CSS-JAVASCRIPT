@@ -9,10 +9,12 @@ buttons.forEach(btn => {
         ripples.style.left = x + 'px';
         ripples.style.top = y + 'px';
         this.appendChild(ripples);
+        e.preventDefault();
+        var self = this;
 
         setTimeout(() => {
             ripples.remove()
-
+            window.location.href = self.href;
         }, 1000);
     })
 })
