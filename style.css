@@ -18,37 +18,38 @@ a {
     display: inline-block;
     padding: 12px 36px;
     margin: 10px 0;
-    color: #fff;
+    color: black;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 30px;
+    font-weight: bold;
     letter-spacing: 2px;
     border-radius: 40px;
     overflow: hidden;
 }
 
 a:nth-child(1) {
-    background: linear-gradient(90deg, rgb(129, 13, 13), rgb(8, 1, 1));
+    background: linear-gradient(90deg, rgb(71, 71, 71), silver);
 }
 
 a:nth-child(2) {
-    background: linear-gradient(90deg, rgb(28, 216, 138), rgb(39, 35, 35));
+    background: linear-gradient(90deg, silver, darkblue);
 }
 
 a:nth-child(3) {
-    background: linear-gradient(90deg, rgb(28, 216, 138), rgb(39, 35, 35));
+    background: linear-gradient(90deg, darkblue, white);
 }
 
 a:nth-child(4) {
-    background: linear-gradient(90deg, rgb(28, 216, 138), rgb(39, 35, 35));
+    background: linear-gradient(90deg, white, lightgreen);
 }
 
 a:nth-child(5) {
-    background: linear-gradient(90deg, rgb(28, 216, 138), rgb(39, 35, 35));
+    background: linear-gradient(90deg, lightblue, darkblue);
 }
 
 a:nth-child(6) {
-    background: linear-gradient(90deg, rgb(28, 216, 138), rgb(39, 35, 35));
+    background: linear-gradient(90deg, silver, white);
 }
 
 span {
