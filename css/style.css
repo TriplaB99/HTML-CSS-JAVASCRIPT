@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 :root {
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Architects Daughter', cursive;
     --text-primary: #b6b6b6;
     --text-secondary: #ececec;
@@ -115,6 +115,10 @@ main {
 
 .navbar:hover .logo svg {
     transform: rotate(-180deg);
+}
+
+p {
+    font-family: Arial;
 }
 
 
