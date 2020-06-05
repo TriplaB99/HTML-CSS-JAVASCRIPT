@@ -7,7 +7,7 @@
 }
 
 :root {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 body {
@@ -80,17 +80,17 @@ body {
 
 .box:after,
 .box:before {
-    background: linear-gradient(235deg, rgb(104, 54, 25), black, green);
+    background: linear-gradient(235deg, rgb(104, 54, 25), #010615, green);
 }
 
 .box:nth-child(2):after,
 .box:nth-child(2):before {
-    background: linear-gradient(235deg, hotpink, black, pink);
+    background: linear-gradient(235deg, hotpink, #010615, pink);
 }
 
 .box:nth-child(3):after,
 .box:nth-child(3):before {
-    background: linear-gradient(235deg, orange, black, #620909);
+    background: linear-gradient(235deg, orange, #010615, #620909);
 }
 
 .box .content {
