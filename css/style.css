@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Nunito, sans-serif;
+}
+
+:root {
+    font-size: 20px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: #010615;
+}
+
+.box {
+    position: relative;
+    width: 19rem;
+    height: 19rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5rem;
+    transition: 0.5s;
+    background: #060c21;
+}
+
+.box:hover {
+    height: 25rem;
+}
+
+.box .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0.625rem;
+    box-sizing: border-box;
+}
+
+.box .imgBx img {
+    max-width: 100%;
+    opacity: 0.1;
+    transition: 0.5s;
+}
+
+.box:hover .imgBx img {
+    opacity: 1;
+}
+
+.box:before {
+    content: '';
+    position: absolute;
+    top: -0.125rem;
+    left: -0.125rem;
+    right: -0.125rem;
+    bottom: -0.125rem;
+    background: #fff;
+    z-index: -1;
+}
+
+.box:after {
+    content: '';
+    position: absolute;
+    top: -0.125rem;
+    left: -0.125rem;
+    right: -0.125rem;
+    bottom: -0.125rem;
+    background: #fff;
+    z-index: -2;
+    filter: blur(2.5rem);
+}
+
+.box:after,
+.box:before {
+    background: linear-gradient(235deg, rgb(104, 54, 25), black, green);
+}
+
+.box:nth-child(2):after,
+.box:nth-child(2):before {
+    background: linear-gradient(235deg, hotpink, black, pink);
+}
+
+.box:nth-child(3):after,
+.box:nth-child(3):before {
+    background: linear-gradient(235deg, orange, black, #620909);
+}
+
+.box .content {
+    position: absolute;
+    left: 0.625rem;
+    right: 0.625rem;
+    bottom: 0.625rem;
+    height: 5.625rem;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.box:hover .content {
+    opacity: 1;
+}
+
+.box .content h2 {
+    font-size: 1.25rem;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.25rem;
+    letter-spacing: 0.06rem;
+}
+
+.box .content h2 span {
+    font-size: 0.875rem;
+    color: #fff;
+    font-weight: 200;
+    letter-spacing: 0.125rem;
+}
