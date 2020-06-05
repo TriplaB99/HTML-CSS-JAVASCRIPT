@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Video Background Fadeout</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section>
+        <video src="img/bg.mp4" autoplay muted loop></video>
+    </section>
+    <section>
+        <div class="content">
+            <h2>Video Background Fadeout</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel mi ut mauris ultrices rhoncus. Praesent tempor erat sed porta maximus. Curabitur vel placerat metus. Suspendisse viverra ornare neque, id cursus urna venenatis consectetur.
+                Nam velit metus, tristique sed efficitur sit amet, pellentesque eget velit. Curabitur sollicitudin a ex eget dapibus. Sed laoreet quis risus vel pulvinar. Aliquam erat volutpat. Maecenas eget dapibus ipsum. Donec semper efficitur auctor.
+                Proin auctor arcu in magna facilisis, ac convallis nisi dictum. Nulla accumsan dolor eu mauris blandit, quis semper tellus pharetra. Pellentesque interdum, elit a blandit eleifend, nisl sem vehicula augue, at iaculis lectus nibh id nisi.
+                Mauris ex lectus, maximus dignissim tortor non, ultricies placerat sem.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel mi ut mauris ultrices rhoncus. Praesent tempor erat sed porta maximus. Curabitur vel placerat metus. Suspendisse viverra ornare neque, id cursus urna venenatis consectetur.
+                Nam velit metus, tristique sed efficitur sit amet, pellentesque eget velit. Curabitur sollicitudin a ex eget dapibus. Sed laoreet quis risus vel pulvinar. Aliquam erat volutpat. Maecenas eget dapibus ipsum. Donec semper efficitur auctor.
+                Proin auctor arcu in magna facilisis, ac convallis nisi dictum. Nulla accumsan dolor eu mauris blandit, quis semper tellus pharetra. Pellentesque interdum, elit a blandit eleifend, nisl sem vehicula augue, at iaculis lectus nibh id nisi.
+                Mauris ex lectus, maximus dignissim tortor non, ultricies placerat sem.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel mi ut mauris ultrices rhoncus. Praesent tempor erat sed porta maximus. Curabitur vel placerat metus. Suspendisse viverra ornare neque, id cursus urna venenatis consectetur.
+                Nam velit metus, tristique sed efficitur sit amet, pellentesque eget velit. Curabitur sollicitudin a ex eget dapibus. Sed laoreet qlectus nibh id nisi. Mauris ex lectus, maximus dignissim tortor non, ultricies placerat sem.Lorem ipsum
+                neque, id cursus urna venenatis consectetur. Nam velit metus, tristique sed efficitur sit amet, pellentesque eget velit. Curabitur sollicitudin a ex eget dapibus. Sed laoreet quis risus vel pulvinar. Aliquam erat volutpat. Maecenas eget
+                dapibus ipsum. Donec semper efficitur auctor. Proin auctor arcu in magna facilisis, ac convallis nisi dictum. Nulla accumsan dolor eu mauris blandit, quis semper tellus pharetra. Pellentesque interdum, elit a blandit eleifend, nisl sem
+                vehicula augue, at iaculis lectus nibh id nisi. Mauris ex lectus, maximus dignissim tortor non, ultricies placerat sem.
+            </p>
+
+        </div>
+    </section>
+    <script type="text/javascript">
+        let video = document.querySelector('video');
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            video.style.opacity = 1 + value / -900;
+        })
+    </script>
+</body>
+
+</html>
