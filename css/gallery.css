@@ -1,6 +1,14 @@
 @import url('base.css');
+header {
+    margin-top: 1rem;
+    margin-left: 5rem;
+    text-align: center;
+}
+
 .grid {
-    margin: 2rem;
+    margin-right: 1rem;
+    margin-left: 5rem;
+    margin-bottom: 1rem;
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
@@ -42,6 +50,7 @@
 
 .grid .card .cardtext {
     position: absolute;
+    padding: 0.5rem;
     text-align: center;
     justify-content: center;
     opacity: 0;
@@ -50,4 +59,17 @@
 .grid .card:hover .cardtext {
     opacity: 1;
     transition: ease-in 1s;
+}
+
+@media only screen and (max-width: 40rem) {
+    header {
+        margin-left: 1rem;
+    }
+    .grid {
+        margin-left: 1rem;
+        display: block;
+    }
+    .grid .card {
+        margin-bottom: 1rem;
+    }
 }
